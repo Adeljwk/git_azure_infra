@@ -4,6 +4,12 @@ variable "ressource_name" {
     description = "description vartest1"
 }
 
+variable "name_prefix" {
+    type = string
+    description = "description vartest1"
+}
+
+
 variable "vnet_cidrs" {
     type = list(string)
     default = ["defaultvartest2"]
