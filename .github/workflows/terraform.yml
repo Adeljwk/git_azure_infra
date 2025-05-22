@@ -2,7 +2,7 @@ name: 'Terraform'
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev" ]
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -62,7 +62,7 @@ jobs:
   apply:
     name: 'Terraform Apply'
     runs-on: self-hosted
-    environment: production
+    environment: ${{github.ref_name}}
     needs: ["plan"]
 
     steps:
