@@ -2,7 +2,7 @@ name: 'Terraform'
 
 on:
   push:
-    branches: [ "main", "dev" ]
+    branches: [ "production", "dev" ]
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
